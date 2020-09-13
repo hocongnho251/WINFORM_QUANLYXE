@@ -19,16 +19,21 @@ namespace QUANLYXE_HOCONGNHO_7970
             danhSachXe.Add(xe.BienSo,xe);
         }
 
-        public XE Tim(String bienSo)
+        public XE Tim(string bienSo)
         {
             if (this.danhSachXe.ContainsKey(bienSo))
                 return this.danhSachXe[bienSo];
             else return null;
         }
 
-        public void Xoa(string bienSo)
+        public bool Xoa(string bienSo)
         {
-            this.danhSachXe.Remove(bienSo);
+            if (this.danhSachXe.ContainsKey(bienSo))
+            {
+                this.danhSachXe.Remove(bienSo);
+                return true;
+            }
+            return false;
         }
 
         public void Xuat()

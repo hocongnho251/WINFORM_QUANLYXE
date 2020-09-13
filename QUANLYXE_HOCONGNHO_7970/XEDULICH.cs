@@ -28,14 +28,15 @@ namespace QUANLYXE_HOCONGNHO_7970
         override public void Nhap()
         {
             base.Nhap();
-            Console.WriteLine("Nhập số chỗ ngồi :");
+            Console.WriteLine("Nhap so cho ngoi :");
             this.SoChoNgoi = Convert.ToInt32(Console.ReadLine());
         }
 
         override public void Xuat()
         {
             base.Xuat();
-            Console.WriteLine("Số chỗ ngồi là :" + this.SoChoNgoi);
+            Console.WriteLine("So cho ngoi la :" + this.SoChoNgoi);
+            Console.WriteLine("------------------------------------------ ");
         }
 
     }

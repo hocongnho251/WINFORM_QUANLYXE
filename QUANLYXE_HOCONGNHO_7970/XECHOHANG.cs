@@ -28,7 +28,7 @@ namespace QUANLYXE_HOCONGNHO_7970
         override public void Nhap()
         {
             base.Nhap();
-            Console.WriteLine("Nhập số tấn :");
+            Console.WriteLine("Nhap so tan :");
             this.SoTan = Convert.ToDouble
                 (Console.ReadLine());
         }
@@ -36,7 +36,8 @@ namespace QUANLYXE_HOCONGNHO_7970
         override public void Xuat()
         {
             base.Xuat();
-            Console.WriteLine("Số tấn là :" + this.soTan);
+            Console.WriteLine("So tan la :" + this.soTan);
+            Console.WriteLine("------------------------------------------ ");
         }
     }
 }

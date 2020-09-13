@@ -55,25 +55,25 @@ namespace QUANLYXE_HOCONGNHO_7970
 
         virtual public void Nhap()
         {
-            Console.WriteLine("Nhập vào tên xe");
+            Console.WriteLine("Nhap vao ten xe");
             this.TenXe = Console.ReadLine();
-            Console.WriteLine("Nhập vào biển số");
+            Console.WriteLine("Nhap vao bien so");
             this.BienSo = Console.ReadLine();
-            Console.WriteLine("Nhập vào trọng tải");
+            Console.WriteLine("Nhap vao trong tai");
             this.TrongTai = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Nhập tiêu chuẩn bằng");
+            Console.WriteLine("Nhap vao tieu chuan bang");
             this.TieuChuanBang = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Nhập vào ngày đăng kiểm");
+            Console.WriteLine("Nhap vao ngay đang kiem");
             this.NgayDangKiem = DateTime.Parse(Console.ReadLine());
         }
         virtual public void Xuat()
         {
-            Console.WriteLine("Tên xe là: " + this.TenXe);
-            Console.WriteLine("Biển số xe là: " + this.BienSo);
-            Console.WriteLine("Trọng tải là: " + this.TrongTai);
-            Console.WriteLine("Tiêu chuẩn băng là: " + this.TieuChuanBang);
-            Console.WriteLine("Ngày đăng kiểm là: " + this.NgayDangKiem);
-
+            Console.WriteLine("------------------------------------------ ");
+            Console.WriteLine("Ten xe la: " + this.TenXe);
+            Console.WriteLine("Bien so xe la: " + this.BienSo);
+            Console.WriteLine("Trong tai la: " + this.TrongTai);
+            Console.WriteLine("Tieu chuan bang la: " + this.TieuChuanBang);
+            Console.WriteLine("Ngay đang kiem la: " + this.NgayDangKiem);
         }
 
     }
